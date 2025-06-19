@@ -1,0 +1,58 @@
+/* Styles personnalisés pour l'application React Hooks Demo */
+
+body {
+  margin: 0;
+  font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  background-color: #f8f9fa;
+}
+
+/* Animation pour l'icône React */
+.react-icon {
+  animation: react-spin 20s infinite linear;
+}
+
+@keyframes react-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Styles pour les éléments de menu actifs */
+.ui.inverted.menu .item:hover {
+  background-color: rgba(255, 255, 255, 0.08) !important;
+  transition: background-color 0.3s ease;
+}
+
+/* Amélioration des transitions */
+.ui.menu .item {
+  transition: all 0.3s ease;
+}
+
+/* Style pour le contenu principal */
+.main-content {
+  min-height: calc(100vh - 200px);
+  padding: 2rem 0;
+}
+
+/* Styles pour les démos */
+.demo-container {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  margin: 1rem 0;
+}
+
+/* Responsive design pour mobile */
+@media only screen and (max-width: 768px) {
+  .ui.inverted.menu .item {
+    font-size: 0.9rem;
+  }
+  
+  .ui.inverted.menu .item .icon {
+    margin: 0 0.2rem 0 0 !important;
+  }
+}
